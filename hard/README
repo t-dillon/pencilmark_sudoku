@@ -1,27 +1,32 @@
 
-$ tdoku/build/run_benchmark -p -t300 -w120 -sminisat_augmented_01,fsss2_locked,tdoku minisat*
+$ tdoku/build/run_benchmark -p -t1200 -w300 -sminisat_augmented_01,fsss2_locked,tdoku minisat*
 
 |minisat_bt_20-30k                     |  puzzles/sec|  usec/puzzle|   %no_guess|  guesses/puzzle|
 |--------------------------------------|------------:|------------:|-----------:|---------------:|
-|minisat_augmented_01                  |         1.0 |   974,869.4 |       0.0% |      29,799.12 |
-|fsss2_locked                          |         2.4 |   412,480.8 |       0.0% |     278,869.36 |
-|tdoku                                 |         4.6 |   219,750.3 |       0.0% |     313,634.81 |
+|minisat_augmented_01                  |         1.1 |   932,323.3 |       0.0% |      28,791.84 |
+|fsss2_locked                          |         2.7 |   376,276.3 |       0.0% |     274,391.83 |
+|tdoku                                 |         4.1 |   245,782.5 |       0.0% |     313,837.07 |
 
 |minisat_bt_30-40k                     |  puzzles/sec|  usec/puzzle|   %no_guess|  guesses/puzzle|
 |--------------------------------------|------------:|------------:|-----------:|---------------:|
-|minisat_augmented_01                  |         0.8 | 1,262,414.0 |       0.0% |      38,061.35 |
-|fsss2_locked                          |         1.9 |   530,466.1 |       0.0% |     361,173.78 |
-|tdoku                                 |         3.9 |   258,513.7 |       0.0% |     373,751.45 |
+|minisat_augmented_01                  |         0.8 | 1,218,740.5 |       0.0% |      36,893.88 |
+|fsss2_locked                          |         2.2 |   448,231.2 |       0.0% |     325,663.96 |
+|tdoku                                 |         3.4 |   290,697.0 |       0.0% |     365,279.15 |
 
 |minisat_bt_40-60k                     |  puzzles/sec|  usec/puzzle|   %no_guess|  guesses/puzzle|
 |--------------------------------------|------------:|------------:|-----------:|---------------:|
-|minisat_augmented_01                  |         0.5 | 1,888,676.5 |       0.0% |      54,407.50 |
-|fsss2_locked                          |         1.4 |   700,914.0 |       0.0% |     482,766.76 |
-|tdoku                                 |         2.8 |   355,651.0 |       0.0% |     506,601.52 |
+|minisat_augmented_01                  |         0.6 | 1,614,283.4 |       0.0% |      47,921.38 |
+|fsss2_locked                          |         1.2 |   840,818.2 |       0.0% |     641,448.30 |
+|tdoku                                 |         2.0 |   491,629.2 |       0.0% |     634,414.52 |
 
-|minisat_bt_60k+                       |  puzzles/sec|  usec/puzzle|   %no_guess|  guesses/puzzle|
+|minisat_bt_60-99k                     |  puzzles/sec|  usec/puzzle|   %no_guess|  guesses/puzzle|
 |--------------------------------------|------------:|------------:|-----------:|---------------:|
-|minisat_augmented_01                  |         0.4 | 2,443,618.9 |       0.0% |      70,526.46 |
-|fsss2_locked                          |         1.0 |   964,987.7 |       0.0% |     668,926.78 |
-|tdoku                                 |         1.9 |   524,838.7 |       0.0% |     771,111.45 |
+|minisat_augmented_01                  |         0.3 | 2,861,866.2 |       0.0% |      79,595.37 |
+|fsss2_locked                          |         0.6 | 1,711,022.0 |       0.0% |   1,344,428.57 |
+|tdoku                                 |         1.1 |   879,516.5 |       0.0% |   1,144,566.89 |
 
+|minisat_bt_100k+                      |  puzzles/sec|  usec/puzzle|   %no_guess|  guesses/puzzle|
+|--------------------------------------|------------:|------------:|-----------:|---------------:|
+|minisat_augmented_01                  |         0.2 | 4,705,726.3 |       0.0% |     135,212.69 |
+|fsss2_locked                          |         0.2 | 5,620,274.9 |       0.0% |   4,692,598.59 |
+|tdoku                                 |         0.5 | 2,098,822.9 |       0.0% |   2,848,605.21 |
